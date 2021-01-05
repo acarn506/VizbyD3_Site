@@ -4,6 +4,7 @@
   "description": "",
   "main": "clubServer.js",
   "scripts": {
+    "start": "node clubServer.js",
     "test": "mocha"
   },
   "author": "",
