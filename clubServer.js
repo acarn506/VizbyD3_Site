@@ -53,7 +53,7 @@ const setUpSessionMiddleware = function(req, res, next) {
 
 app.use(setUpSessionMiddleware);
 
-//app.use(express.static("public"));
+app.use(express.static("public"));
 
 // Use this middleware to restrict paths to only logged in users
 const checkMemberMiddleware = function(req, res, next) {
