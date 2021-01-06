@@ -1,3 +1,6 @@
+var http = require("http");
+const server = http.createServer(app);
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -13,6 +16,14 @@ const memberSchema = require("./ValidationSchemas/Member");
 const ApplicantSchema = require("./ValidationSchemas/Applicant");
 const ActivitySchema = require("./ValidationSchemas/Activity");
 const fetch = require("node-fetch");
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on("error", onError);
+server.on("listening", onListening);
 
 // Schema Validation Setup
 let ajv = new Ajv(); // options can be passed, e.g. {allErrors: true}
