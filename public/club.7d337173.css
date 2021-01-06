@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  position: fixed;
+  background-color: #b6edf3;
+  width: 100%;
+  margin: 0;
+}
+.heading {
+  display: block;
+  margin-top: 120px;
+}
+h1 {
+  font-family: Kumbh Sans, sans-serif;
+  color: #61268c;
+  margin: 120px 0 30px;
+}
+h2 {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 24px;
+  line-height: 1.5em;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+footer {
+  margin: 40px 0 10px;
+  padding: 20px;
+}
+footer,
+section {
+  text-align: center;
+}
+.infoBox {
+  text-align: left;
+  background-color: #bbf3bb;
+  padding: 15px;
+  margin: 10px 0 70px;
+  border-radius: 0.2em;
+}
+.infoEntry {
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-align: left;
+  font-size: 18px;
+  color: #b363ef;
+}
+.pageInfo {
+  font-size: 18px;
+  color: #4a4747;
+  margin: 0;
+}
+.buttonBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+.btn {
+  outline: none;
+  background-color: #fff;
+  display: inline-block;
+  margin: 10px 40px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+.active,
+.btn:hover {
+  background-color: #d2a3f1;
+}
+div.bar {
+  display: inline-block;
+  width: 20px;
+  height: 75px;
+  background-color: teal;
+  margin-right: 2px;
+}
+.bar {
+  fill: #6495ed;
+}
+.bar:hover {
+  fill: #f3bb43;
+}
+.chartA {
+  border: 2px solid #f9a60f;
+  border-radius: 3px;
+  margin-bottom: 50px;
+}
+.chartA,
+.chartB {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+}
+.chartB {
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+#updateBtn {
+  padding: 10px;
+  margin: 10px 10px 20px;
+  border-radius: 2em;
+  background-color: #7fffe1;
+  color: #93c;
+  font-weight: 700;
+  outline: none;
+}
+#updateBtn:hover {
+  background: #e4d947;
+  border-color: #f1f1f1;
+}
+.chartC {
+  border: 2px solid #f9a60f;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.chartE {
+  margin-bottom: 25px;
+}
+.axis line,
+.axis path {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-family: sans-serif;
+  font-size: 14px;
+  fill: #000;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+.password,
+.username {
+  margin: 8px 0;
+}
+.loginbtn {
+  margin: 20px 0 0;
+  padding: 8px;
+}
+#selectColor,
+#width {
+  margin-right: 10px;
+}
+#Application {
+  display: grid;
+  grid-template-columns: 10rem 20rem;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1em;
+  border: dashed #000;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#memberSubmit {
+  margin-top: 20px;
+  padding: 4px;
+  background-color: #30ad30;
+  font-weight: 700;
+  border: 1.2px solid #000;
+  border-radius: 0.2em;
+  color: #fdfeff;
+  outline: none;
+}
+#memberSubmit:hover {
+  background: #167025;
+  border-color: #f1f1f1;
+}
+#Application label {
+  justify-self: end;
+}
+.addActBtnContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px [col-start]);
+  grid-template-rows: repeat(3, 20px [col-start]);
+  row-gap: 15px;
+}
+.activitiesContent {
+  display: inline-block;
+  background-color: #8bc34a;
+  padding: 10px;
+  margin-top: 50px;
+  border: 3px solid #000;
+  width: 440px;
+  height: 140px;
+  text-align: center;
+}
+.actTable {
+  margin-top: 25px;
+  table-layout: fixed;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 3px solid #000;
+  border-collapse: collapse;
+}
+td {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+}
+td,
+th {
+  border: 2px solid #0ebeeb;
+}
+th {
+  font-size: 20px;
+}
+thead tr {
+  color: #000;
+  font-weight: 700;
+}
+.memTable {
+  display: inline-block;
+  table-layout: fixed;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+.logoutbtn {
+  margin-top: 150px;
+  padding: 8px;
+  color: purple;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto;
+  justify-items: flex-start;
+  align-items: center;
+}
+.infoContainer {
+  border: 4px solid #e2dddd;
+  background-color: #b9d7f5;
+  border-radius: 0.5em;
+  margin-top: 40px;
+}
+.chartContainer {
+  border: 4px #e2dddd;
+  background-color: #fff;
+  border-radius: 0.5em;
+  margin-top: 20px;
+}
+.btnContainer {
+  border: 4px solid #e2dddd;
+  background-color: #d0cccc;
+  border-radius: 0.5em;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+.dashHeading {
+  color: #8e9a9a;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.houseChart {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.xlabel,
+.ylabel {
+  text-anchor: end;
+}
+.controls {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 260px;
+  background: #d0cccc;
+  border-radius: 4px;
+}
+h4 {
+  margin: 6px 0 0;
+}
+.btnDash {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+  background: #61a2f7;
+  margin-top: 15px;
+  transition: filter 0.3s;
+}
+.btnDash:hover {
+  background: #efe012;
+  filter: brightness(1);
+  border-color: #f1f1f1;
+}
+.header {
+  margin: 10px 0;
+}
+.lenContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  left: 42px;
+  top: 130px;
+  width: 140px;
+  height: 100px;
+  background-color: rgb(20 130 243);
+  border-radius: 4px;
+}
+.lenHeading {
+  margin: 10px 0 0;
+  color: #1b1b1b;
+}
+.lenNumber {
+  margin: 10px 0 0;
+  color: #fff;
+}
+.targetHeader {
+  margin: 0;
+  color: #fff;
+}
+.targetContainer {
+  top: 260px;
+  width: 120px;
+  height: 40px;
+  background-color: #449ae2;
+  padding: 10px;
+}
+.salePricebtn,
+.targetContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  left: 42px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+.salePricebtn {
+  top: 350px;
+  width: 140px;
+  height: 60px;
+  background-color: #72c1ef;
+  padding: 15px;
+}
+.salePricebtn:hover {
+  background: #efe012;
+  filter: brightness(0.9);
+  border-color: #f1f1f1;
+}
+.salePriceHeader {
+  color: #fff;
+  margin: 0;
+}
+/*# sourceMappingURL=club.7d337173.css.map */
