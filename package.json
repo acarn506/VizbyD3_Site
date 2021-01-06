@@ -5,7 +5,7 @@
   "main": "clubServer.js",
   "scripts": {
     "test": "mocha",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",

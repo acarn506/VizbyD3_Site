@@ -363,10 +363,8 @@ app.get("/dailyWeather", async function(req, res) {
   res.json(weather_data);
 });
 
-/*
 const host = "localhost";
 
 app.listen(port, host, function() {
   console.log(`deployTest.js app listening on IPv4: ${host}:${port}`);
 });
-*/
