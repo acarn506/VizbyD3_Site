@@ -183,6 +183,7 @@ app.post(
     user = user[0];
 
     if (!user) {
+      console.log("ERROR: Incorrect username");
       res.status(401).json({
         error: true,
         message: "User/password error"
@@ -206,6 +207,7 @@ app.post(
         res.json(newUserInfo);
       });
     } else {
+      console.log("ERROR: Incorrect password");
       res.status(401).json({
         error: true,
         message: "User/password error"
