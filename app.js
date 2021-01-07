@@ -57,24 +57,24 @@ app.use(express.static("public"));
 
 // Use this middleware to restrict paths to only logged in users
 const checkMemberMiddleware = function(req, res, next) {
-  if (req.session.user.role === "guest") {
+  /*if (req.session.user.role === "guest") {
     res.status(401).json({ error: "Not permitted" });
   } else {
     console.log(`Session info: ${JSON.stringify(req.session)} \n`);
     next();
   }
-
+*/
   console.log(`Session info: ${JSON.stringify(req.session)} \n`);
   next();
 };
 
 // User this middlewave to restrict paths only to admins
 const checkAdminMiddleware = function(req, res, next) {
-  if (req.session.user.role !== "admin") {
+  /*if (req.session.user.role !== "admin") {
     res.status(401).json({ error: "Not permitted" });
   } else {
     next();
-  }
+  } */
   next();
 };
 
@@ -139,12 +139,7 @@ let activities = Datastore.create("./DB/activities.db");
 
 // get activites
 app.get("/activities", checkMemberMiddleware, async function(req, res) {
-  let data = null;
-  try {
-    data = await activities.find({});
-  } catch (err) {
-    console.log(err);
-  }
+  let data = await activities.find({});
   res.json(data);
 });
 
