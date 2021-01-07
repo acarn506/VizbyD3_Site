@@ -139,7 +139,11 @@ let activities = Datastore.create("./DB/activities.db");
 
 // get activites
 app.get("/activities", checkMemberMiddleware, async function(req, res) {
-  let data = await activities.find({});
+  try {
+    let data = await activities.find({});
+  } catch (err) {
+    console.log(err);
+  }
   res.json(data);
 });
 
