@@ -92,19 +92,11 @@ function jsonErrors(err, req, res, next) {
 }
 
 let count = 0; // Visit count
-let startDate = new Date(); // Server start Date time
 let name = "Anthony Carnero";
 
 app.get("/", function(req, res) {
   count++;
   res.send(`Hi from ${name}, Visited: ${count} times.`);
-});
-
-app.get("/uptime", function(req, res) {
-  let curDate = new Date();
-  res.send(
-    `Current Date/Time: ${curDate.toLocaleString()}, Server Up Since: ${startDate.toLocaleString()}`
-  );
 });
 
 app.get("/info", function(req, res) {
