@@ -56,14 +56,14 @@ app.get("/housePrices/:feature", checkMemberMiddleware, async function(
 
 ![Bar Chart](images/barchart.png)
 
-- On the left are some info panels and the "SalePrice chart" is a button that switches the display back to the bar chart.  
+- On the left are some info panels and the "SalePrice Histogram" is a button that switches the display back to the bar chart by conditionally rendering chart components.  
 
 ![Scat Clip](clips/scatSelection.gif)
 
 - A display of buttons under the scat plot allows you to switch out which feature will be compared with the target feature "SalePrice" in order to get an idea of correlated relationships.  
 
 
-## Wall of D3
+## Wall of D3 - home page
 
 These were a collection of some of my first ever D3 charts but converted to react components.  
 
