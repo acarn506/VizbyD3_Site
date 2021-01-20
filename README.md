@@ -54,11 +54,11 @@ app.get("/housePrices/:feature", checkMemberMiddleware, async function(
 - Wanted to build a dashboard that displayed some insight on the target feature for this set of data/competition being "SalePrice"
 - built a histogram chart and a Scatter plot that was capable of switching out different features.  
 
-![Bar Chart](images/barChart.png)
+![Bar Chart](images/barchart.png)
 
 - On the left are some info panels and the "SalePrice chart" is a button that switches the display back to the bar chart.  
 
-![Scat Chart](images/scatChart.png)
+![Scat Clip](clips/scatSelection.gif)
 
 - A display of buttons under the scat plot allows you to switch out which feature will be compared with the target feature "SalePrice" in order to get an idea of correlated relationships.  
 

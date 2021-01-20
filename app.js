@@ -345,6 +345,7 @@ app.get("/allHouseFeatures", async function(req, res) {
   res.json(data);
 });
 
+//https://openweathermap.org/history#min
 app.get("/dailyWeather", async function(req, res) {
   const api_key = process.env.WEATHER_API_KEY;
 
