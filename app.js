@@ -359,6 +359,14 @@ app.get("/dailyWeather", async function(req, res) {
   res.json(weather_data);
 });
 
+let nycWeather = Datastore.create("./DB/nycWeather.db");
+
+// get avocado data from db
+app.get("/nycWeather", async function(req, res) {
+  let data = await nycWeather.find({}, { date: 1, temperatureHigh: 1, _id: 0 });
+  res.json(data);
+});
+
 const host = "0.0.0.0";
 
 app.listen(port, host, function() {
